@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>David Chu's China Bistro</title>
+		<!-- <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'> -->
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link href="css/restaurant.css" type="text/css" rel="stylesheet" />
+		<link href="css/spinner.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body ng-app="restaurant" ng-strict-di>
+
+		<spinner class="spinner"></spinner>
+
+		<header-component></header-component>
+
+		<div id="call-btn" class="visible-xs">
+			<a class="btn" href="tel:410-602-5008">
+				<span class="glyphicon glyphicon-earphone"></span>
+				410-602-5008
+			</a>
+		</div>
+		<div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
+
+		<ui-view>
+			<div class="text-center initial-loading">
+				<h2>Loading Site...</h2>
+			</div>
+		</ui-view>
+
+		<footer-component></footer-component>
+
+		<script src="http://127.0.0.1/jquery-3.1.1.min.js"></script>
+		<script src="http://127.0.0.1/bootstrap.js"></script>
+		<script src="http://127.0.0.1/angular.js"></script>
+		<script src="http://127.0.0.1/angular-ui-router.js"></script>
+
+		<script src="js/restaurant.module.js"></script>
+		<script src="js/restaurant.routes.js"></script>
+		<script src="js/header.component.js"></script>
+		<script src="js/footer.component.js"></script>
+
+		<script src="js/public/public.module.js"></script>
+		<script src="js/public/public.routes.js"></script>
+
+		<script src="js/spinner/spinner.module.js"></script>
+		<script src="js/spinner/spinner.component.js"></script>
+
+		<script src="js/common/common.module.js"></script>
+		<script src="js/common/common.interceptor.js"></script>
+		<script src="js/common/menu.service.js"></script>
+		<script src="js/public/menu.controller.js"></script>
+		<script src="js/public/menu.category.component.js"></script>
+		<script src="js/public/menu-items.controller.js"></script>
+		<script src="js/public/menu-item.component.js"></script>
+	</body>
+</html>
